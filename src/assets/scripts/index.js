@@ -16,6 +16,20 @@ const renderNavigation = () => {
   const content = require('../content/navigation.md');
   const nav = document.querySelector('nav');
   nav.innerHTML = content;
+  activateNavigation();
+};
+
+/* Activate Navigation Button */
+const activateNavigation = () => {
+  const button = document.querySelector('button.menu');
+  const menu = document.querySelector('nav ul');
+  const logo = document.querySelector('nav .logo');
+  button.addEventListener('click', (event) => {
+    const btn = event.target;
+    menu.classList.toggle('active');
+    btn.classList.toggle('open');
+    logo.classList.toggle('reverse');
+  });
 };
 
 /* Render Markdown Content into HTML */
