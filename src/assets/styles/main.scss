@@ -1,9 +1,149 @@
+/* Default Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IntegralCF-Regular';
+  font-weight: bold;
+}
+
 /* Main Content Body */
 main {
-  margin: 1em 1.5em;
+  clear: both;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
 
-  p {
-    margin: 0 0 1.25em 0;
+  .section {
+    overflow: hidden;
+    padding: 100px 5%;
+    position: relative;
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'IntegralCF-RegularOblique';
+    }
+
+    h2 {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: .5em;
+      position: relative;
+      z-index: 2;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -15px;
+        bottom: 0;
+        overflow: visible;
+        width: 118%;
+        height: 53px;
+        background-color: $white;
+        z-index: -1;
+        -webkit-transform: skewX(-25deg);
+           -moz-transform: skewX(-25deg);
+            -ms-transform: skewX(-25deg);
+             -o-transform: skewX(-25deg);
+                transform: skewX(-25deg);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: initial;
+      }
+
+    }
+
+    p {
+      font-size: 1.25em;
+      font-weight: 100;
+      line-height: 2em;
+    }
+
+    .role {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
+    &.challenge,
+    &.execution {
+      background-color: $blue-md;
+      color: $white;
+      overflow: hidden;
+
+      h2 {
+        background-color: $white;
+        color: $blue-md;
+      }
+    }
+
+    &.challenge {
+      padding: 200px 5% 80px;
+    }
+
+    &.solutions {
+      h2 {
+        background-color: $blue-md;
+        color: $white;
+        &::before {
+          background-color: $blue-md;
+        }
+      }
+    }
+
+  }
+
+
+  ul {
+    clear: both;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    li {
+      background: $blue;
+      background: -moz-radial-gradient(center, ellipse cover, rgba(52,98,155,1) 56%, rgba(52,98,155,1) 56%, rgba(38,73,115,1) 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(52,98,155,1) 56%,rgba(52,98,155,1) 56%,rgba(38,73,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, rgba(52,98,155,1) 56%,rgba(52,98,155,1) 56%,rgba(38,73,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34629b', endColorstr='#264973',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      color: $white;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-size: .8em;
+      font-family: 'IntegralCF-RegularOblique';
+      font-weight: normal;
+      letter-spacing: .5em;
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 10em 0;
+      text-align: center;
+      width: 50%;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+          background: transparent;
+          float: none;
+          font-family: 'IntegralCF-RegularOblique';
+          font-size: 1.75em;
+          letter-spacing: .125em;
+          margin: 0 auto;
+          padding: 0;
+          width: 60%;
+        }
+
+      }
+
+    }
+
   }
 
 }
