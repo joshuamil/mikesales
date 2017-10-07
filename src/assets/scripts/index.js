@@ -22,6 +22,7 @@ const renderHeader = () => {
 const toggleHeader = (state) => {
   const header = document.querySelector('body');
   if (state && state.length > 0) {
+    header.className = '';
     header.classList.add(state);
   } else {
     header.classList.toggle('active');
@@ -41,6 +42,9 @@ const activateNavigation = () => {
   const button = document.querySelector('button.menu');
   const menu = document.querySelector('nav ul');
   const logo = document.querySelector('nav .logo');
+  logo.addEventListener('click', () => {
+    window.location.href = '#home';
+  });
   button.addEventListener('click', (event) => {
     const btn = event.target;
     menu.classList.toggle('active');
