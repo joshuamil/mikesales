@@ -1,0 +1,67 @@
+main {
+
+  ul {
+    clear: both;
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+
+    li {
+      background: $blue;
+      background: -moz-radial-gradient(center, ellipse cover, rgba(52,98,155,1) 56%, rgba(52,98,155,1) 56%, rgba(38,73,115,1) 100%); /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(52,98,155,1) 56%,rgba(52,98,155,1) 56%,rgba(38,73,115,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, rgba(52,98,155,1) 56%,rgba(52,98,155,1) 56%,rgba(38,73,115,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34629b', endColorstr='#264973',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      color: $white;
+      cursor: pointer;
+      display: block;
+      float: left;
+      font-size: .8em;
+      font-family: 'IntegralCF-RegularOblique';
+      font-weight: normal;
+      letter-spacing: .5em;
+      list-style: none;
+      margin: 0;
+      overflow: hidden;
+      padding: 10em 0;
+      text-align: center;
+      width: 50%;
+
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+
+        li {
+          background: transparent;
+          float: none;
+          font-family: 'IntegralCF-RegularOblique';
+          font-size: 1.75em;
+          letter-spacing: .125em;
+          margin: 0 auto;
+          padding: 0;
+          width: 60%;
+        }
+
+      }
+
+    }
+
+
+
+    @media screen and (max-width: 500px) {
+      li {
+        float: none;
+        width: 100%;
+      }
+    }
+
+  }
+}

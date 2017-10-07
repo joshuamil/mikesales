@@ -37,17 +37,10 @@ let config = {
         loader: 'file-loader?name=dist/assets/images/[name].[ext]'
       },
       {
-        test: /\.md$/,
+        test: /\.html$/,
         use: [
           {
             loader: "html-loader"
-          },
-          {
-            loader: "markdown-loader",
-            options: {
-              pedantic: true,
-              renderer
-            }
           }
         ]
       }
