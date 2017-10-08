@@ -62,6 +62,11 @@ const renderContent = () => {
   main.innerHTML = content;
   const state = (file === 'home') ? 'active' : 'inactive';
   toggleHeader(state);
+  if (file === 'about') {
+    document.querySelector('nav').classList.add('black');
+  } else {
+    document.querySelector('nav').classList.remove('black');
+  }
 };
 
 /* Render Footer Content */

@@ -1,0 +1,131 @@
+{
+  "social": {
+    "instagram": {
+      "address": "https://www.instagram.com/mikesales",
+      "active": true,
+      "icon": "fa-instagram"
+    },
+    "twitter": {
+      "address": "http://twitter.com/mtorez",
+      "active": true,
+      "icon": "fa-twitter"
+    },
+    "linkedin": {
+      "address": "http://linkedin.com/in/michaeltsales",
+      "active": true,
+      "icon": "fa-linkedin"
+    },
+    "email": {
+      "address": "mailto://mtorez@gmail.com",
+      "active": true,
+      "icon": "fa-envelope"
+    },
+    "facebook": {
+      "address": "",
+      "active": false,
+      "icon": "fa-facebook"
+    }
+  },
+  "pages": [
+    {
+      "name": "home",
+      "title": "Home",
+      "file": "home.html",
+      "header": true,
+      "navigation": "black",
+      "footer": true
+    },
+    {
+      "name": "about",
+      "title": "About Me",
+      "file": "about.html",
+      "header": false,
+      "navigation": "black",
+      "footer": true
+    },
+    {
+      "name": "nascar",
+      "title": "NASCAR.com Redesign",
+      "file": "nascar.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "NASCAR.com",
+        "subtitle": "Site Redesign"
+      }
+    },
+    {
+      "name": "sprint",
+      "title": "Sprint Fan Voting Platform",
+      "file": "sprint.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "Sprint Fan Vote",
+        "subtitle": "Voting Platform"
+      }
+    },
+    {
+      "name": "drive",
+      "title": "Drive Video Project",
+      "file": "drive.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "Drive",
+        "subtitle": "Video Streaming Product"
+      }
+    },
+    {
+      "name": "ndms",
+      "title": "NDMS Content Management System",
+      "file": "ndms.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "NASCAR Digital Media Services",
+        "subtitle": "Content Management System"
+      }
+    },
+    {
+      "name": "rcr",
+      "title": "RCR E-Commerce Store",
+      "file": "rcr.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "Richard Childress Racing",
+        "subtitle": "E-Commerce Store"
+      }
+    },
+    {
+      "name": "noda",
+      "title": "Other Brand ID Work",
+      "file": "noda.html",
+      "header": false,
+      "navigation": "white",
+      "footer": true,
+      "tile": {
+        "active": true,
+        "image": "",
+        "title": "Noda School of Arts",
+        "subtitle": "Branding & Identity"
+      }
+    }
+  ]
+}

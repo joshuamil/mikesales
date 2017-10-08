@@ -31,6 +31,24 @@ body {
     width: 100%;
     z-index: 999;
 
+    &.black {
+      .logo {
+        background-image: url('../../../dist/assets/images/logo.png');
+      }
+      button {
+        color: $black;
+      }
+    }
+
+    &.white {
+      .logo {
+        background-image: url('../../../dist/assets/images/logo-reverse.png');
+      }
+      button {
+        color: $white;
+      }
+    }
+
     .logo {
       background-image: url('../../../dist/assets/images/logo.png');
       background-repeat: no-repeat;
