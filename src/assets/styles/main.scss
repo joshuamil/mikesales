@@ -68,6 +68,20 @@ main {
       }
     }
 
+    ul {
+      display: block;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+    }
+
     .content-box {
       max-width: 800px;
       margin: 0 auto;
@@ -101,6 +115,21 @@ main {
         background-color: $white;
         color: $blue-md;
       }
+
+      &.clients {
+        background-color: $blue-dk;
+
+        ul {
+          margin: 2em auto;
+
+          li {
+            padding: 3em .5em;
+          }
+
+        }
+
+      }
+
     }
 
     &.challenge {
@@ -165,6 +194,22 @@ main {
           background-color: $blue-md;
         }
       }
+
+      ul {
+        li {
+          padding: 2em;
+
+          a {
+            color: $black;
+            &:hover {
+              color: $blue;
+              text-decoration: none;
+            }
+          }
+
+        }
+      }
+
     }
 
   }
