@@ -1,31 +1,4 @@
 {
-  "social": {
-    "instagram": {
-      "address": "https://www.instagram.com/mikesales",
-      "active": true,
-      "icon": "fa-instagram"
-    },
-    "twitter": {
-      "address": "http://twitter.com/mtorez",
-      "active": true,
-      "icon": "fa-twitter"
-    },
-    "linkedin": {
-      "address": "http://linkedin.com/in/michaeltsales",
-      "active": true,
-      "icon": "fa-linkedin"
-    },
-    "email": {
-      "address": "mailto://mtorez@gmail.com",
-      "active": true,
-      "icon": "fa-envelope"
-    },
-    "facebook": {
-      "address": "",
-      "active": false,
-      "icon": "fa-facebook"
-    }
-  },
   "pages": [
     {
       "name": "home",
@@ -33,7 +6,8 @@
       "file": "home.html",
       "header": true,
       "navigation": "black",
-      "footer": true
+      "footer": true,
+      "displayInNav": false
     },
     {
       "name": "about",
@@ -41,7 +15,8 @@
       "file": "about.html",
       "header": false,
       "navigation": "black",
-      "footer": true
+      "footer": true,
+      "displayInNav": true
     },
     {
       "name": "nascar",
@@ -55,7 +30,8 @@
         "image": "",
         "title": "NASCAR.com",
         "subtitle": "Site Redesign"
-      }
+      },
+      "displayInNav": true
     },
     {
       "name": "sprint",
@@ -69,7 +45,8 @@
         "image": "",
         "title": "Sprint Fan Vote",
         "subtitle": "Voting Platform"
-      }
+      },
+      "displayInNav": true
     },
     {
       "name": "drive",
@@ -83,7 +60,8 @@
         "image": "",
         "title": "Drive",
         "subtitle": "Video Streaming Product"
-      }
+      },
+      "displayInNav": true
     },
     {
       "name": "ndms",
@@ -97,7 +75,8 @@
         "image": "",
         "title": "NASCAR Digital Media Services",
         "subtitle": "Content Management System"
-      }
+      },
+      "displayInNav": true
     },
     {
       "name": "rcr",
@@ -111,7 +90,8 @@
         "image": "",
         "title": "Richard Childress Racing",
         "subtitle": "E-Commerce Store"
-      }
+      },
+      "displayInNav": true
     },
     {
       "name": "noda",
@@ -125,7 +105,8 @@
         "image": "",
         "title": "Noda School of Arts",
         "subtitle": "Branding & Identity"
-      }
+      },
+      "displayInNav": true
     }
   ]
 }

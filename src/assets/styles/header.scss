@@ -1,21 +1,6 @@
 /* Site Header */
 body {
 
-  &.active {
-    header {
-      display: block;
-    }
-  }
-
-  &.inactive {
-    header {
-      display: none;
-    }
-    .video-container {
-      display: none;
-    }
-  }
-
   header {
     display: block;
     height: 420px;
@@ -23,6 +8,10 @@ body {
     overflow: hidden;
     padding-top: 300px;
     text-align: center;
+
+    &.inactive {
+      display: none;
+    }
 
     h1, h2, h3, h4, h5, h6, p {
       font-family: 'IntegralCF-Regular';
@@ -43,7 +32,7 @@ body {
   }
 
   .video-container {
-    display: block;
+    display: none;
     height: 100%;
     left: 0;
     overflow: hidden;
@@ -52,6 +41,11 @@ body {
     top: 0;
     width: 100%;
     z-index: -1;
+
+    &.active {
+      display: block;
+    }
+
   }
 
 }
