@@ -5,8 +5,10 @@ main {
     display: block;
     margin: 0;
     overflow: hidden;
-    padding: 0;
+    padding: 0 0 220px 0;
     width: 100%;
+    position: absolute;
+    z-index: 4;
 
     li {
       background: $blue;

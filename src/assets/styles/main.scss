@@ -118,9 +118,11 @@ main {
 
       &.clients {
         background-color: $blue-dk;
+        margin-bottom: 220px;
+        padding-bottom: 50px;
 
         ul {
-          margin: 2em auto;
+          margin: 2em auto 0;
 
           li {
             padding: 3em .5em;
@@ -246,6 +248,10 @@ main {
         }
       }
 
+    }
+
+    &#about {
+      margin-top: 0;
     }
 
   }
