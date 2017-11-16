@@ -11,12 +11,17 @@ const start = () => {
   renderNavigation(route);
   renderContent(route);
   renderFooter(route);
+
+  window.onscroll = () => {
+    stickyPanel();
+    stickyPanel('nav', 'sticky', 100);
+  };
+
 };
 
 
 /* Get Page Details */
 const router = () => {
-
   const response = {};
   const hash = window.location.hash;
   response.name = (hash) ? hash.replace(/\#/g,'') : 'home';
@@ -102,6 +107,7 @@ const renderContent = (route) => {
   const nav = document.querySelector('nav');
   nav.className = '';
   nav.classList.add(obj.navigation);
+
 };
 
 
@@ -113,6 +119,20 @@ const renderFooter = (route) => {
     const content = require('../content/footer.html');
     const footer = document.querySelector('footer');
     footer.innerHTML = content;
+  }
+};
+
+
+/* Make a panel sticky when it reaches the top of the page */
+const stickyPanel = (target = '.execution', state = 'sticky', offset = 0) => {
+  const panel = document.querySelector(target);
+  const scrolled = window.pageYOffset;
+  if (panel) {
+    if ((panel.offsetTop + offset) <= scrolled) {
+      panel.classList.add(state);
+    } else {
+      panel.classList.remove(state);
+    }
   }
 };
 

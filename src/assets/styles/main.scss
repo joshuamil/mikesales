@@ -133,17 +133,26 @@ main {
     }
 
     &.execution {
-      background-color: $white;
+      background-color: transparent;
       position: relative;
+      z-index: 2;
+      margin-bottom: 150px;
       &::after {
         content: " ";
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
-        height: 500px;
+        height: 56vh;
         width: 100%;
         background-color: $blue-md;
+      }
+
+      &.sticky {
+        &::after {
+          position: fixed;
+          top: 0;
+        }
       }
 
       &.clients {
@@ -155,8 +164,10 @@ main {
     }
 
     &.challenge {
-      padding: 200px 5% 80px;
-      position: relative;
+      padding: 10vh 5% 80px;
+      position: fixed;
+      width: 90%;
+      height: 40vh;
 
       span{
         width: 100%;
@@ -209,6 +220,9 @@ main {
     }
 
     &.solutions {
+      z-index: 2;
+      margin-top: 650px;
+      background-color: $white;
       h2 {
         background-color: $blue-md;
         color: $white;

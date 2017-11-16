@@ -6,6 +6,10 @@ footer {
   min-height: 150px;
   overflow: hidden;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 0;
 
   p {
     color: $blue;
