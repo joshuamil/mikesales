@@ -56,11 +56,66 @@ main .section ul.screenshots {
       }
 
       img {
+        display: inline-block;
         width: 100%;
+      }
+
+      h2, dl {
+        display: none;
       }
 
     }
 
   }
 
+}
+
+@media only screen and (max-width: 768px) {
+  main .section ul.screenshots {
+    margin: 4em 0 0 0;
+    li {
+      &.trailer {
+        background-color: $blue-dk;
+        overflow: hidden;
+        padding: 2em 0;
+
+        img {
+          display: none;
+        }
+
+        h2 {
+          display: inline-block;
+          margin: 2em 0 1em 0;
+        }
+
+        dl {
+          display: block;
+          margin: 0;
+          padding: 0;
+
+          dd {
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            height: 180px;
+
+            h3 {
+              font-size: 2.5em;
+              margin: 1.5em 0 .25em 0;
+              padding: 0;
+            }
+
+            p {
+              color: $blue-pale;
+              text-transform: uppercase;
+              font-size: .85em;
+            }
+
+          }
+        }
+
+      }
+    }
+  }
 }

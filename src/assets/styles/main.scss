@@ -60,11 +60,15 @@ main {
     }
 
     dl {
+      margin-top: 2.5em;
       dd {
         font-family: "Montserrat", Arial, sans-serif;
         font-size: 1.125em;
         font-weight: 300;
-        line-height: 2em;
+        line-height: 1.5em;
+        margin-bottom: 1.5em;
+        margin-left: 0;
+        padding-left: 0;
       }
     }
 
@@ -83,7 +87,7 @@ main {
     }
 
     .content-box {
-      max-width: 800px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
@@ -163,6 +167,12 @@ main {
         }
       }
 
+      @media only screen and (max-width: 768px) {
+        &::after {
+          height: 77vh;
+        }
+      }
+
     }
 
     &.challenge {
@@ -193,6 +203,34 @@ main {
         right: 0;
         position: absolute;
         z-index: -1;
+      }
+
+      @media only screen and (max-width: 768px) {
+        height: 55vh;
+
+        .content-box {
+          h1 {
+            font-size: 1.3em;
+            line-height: 2.5em;
+          }
+          h3 {
+            font-size: 1em;
+          }
+          p {
+            margin: 1em;
+          }
+          .role {
+            margin: 1em 0;
+            p {
+              font-size: .8em;
+            }
+          }
+        }
+
+        &::after {
+          background-size: contain;
+        }
+
       }
 
       &#nascar::after {
@@ -254,6 +292,20 @@ main {
       margin-top: 0;
     }
 
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  main .section.solutions {
+    margin-top: 515px;
+    padding-top: 50px;
+  }
+
+  main .section.execution {
+    margin-bottom: 0;
+    padding-top: 50px;
   }
 
 }

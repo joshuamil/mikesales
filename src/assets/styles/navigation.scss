@@ -6,9 +6,9 @@ body {
       .logo {
         background-image: url('../../../dist/assets/images/logo.png');
       }
-    }
-    button {
-      color: $black;
+      button {
+        color: $black;
+      }
     }
   }
 
@@ -17,9 +17,9 @@ body {
       .logo {
         background-image: url('../../../dist/assets/images/logo-reverse.png');
       }
-    }
-    button {
-      color: $white;
+      button {
+        color: $white;
+      }
     }
   }
 
@@ -155,6 +155,26 @@ body {
         }
 
       }
+    }
+  }
+
+
+
+  @media only screen and (max-width: 768px) {
+    nav {
+      position: fixed;
+      .logo {
+        display: none;
+      }
+      button {
+        top: 0;
+        right: .25em;
+      }
+
+      &.sticky {
+        border: 1px solid $white;
+      }
+
     }
   }
 
