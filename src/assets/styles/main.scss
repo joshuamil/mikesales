@@ -6,7 +6,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main Content Body */
 main {
-  clear: both;
   margin: 0;
   overflow: hidden;
   padding: 0;
@@ -17,28 +16,38 @@ main {
     padding: 100px 5%;
     position: relative;
 
+    .desktop,
+    .tablet {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+
     h1, h2, h3, h4, h5, h6 {
       font-family: 'IntegralCF-RegularOblique';
       letter-spacing: 2px;
+      font-size: 2em;
+      font-weight: 700;
     }
 
     h2 {
       display: inline-block;
-      font-size: 1.3em;
+      font-size: 2em;
       letter-spacing: 1px;
       margin-bottom: 0;
-      padding: 0 .5em .7em .5em;
+      padding: 0 .6em .7em;
       position: relative;
       z-index: 2;
 
       &::before {
         content: '';
         position: absolute;
-        left: -15px;
+        left: -29px;
         bottom: 0;
         overflow: visible;
-        width: 118%;
-        height: 53px;
+        width: 124%;
+        height: 79px;
         background-color: $white;
         z-index: -1;
         -webkit-transform: skewX(-17deg);
@@ -205,56 +214,28 @@ main {
         z-index: -1;
       }
 
-      @media only screen and (max-width: 768px) {
-        height: 55vh;
-
-        .content-box {
-          h1 {
-            font-size: 1.3em;
-            line-height: 2.5em;
-          }
-          h3 {
-            font-size: 1em;
-          }
-          p {
-            margin: 1em;
-          }
-          .role {
-            margin: 1em 0;
-            p {
-              font-size: .8em;
-            }
-          }
-        }
-
-        &::after {
-          background-size: contain;
-        }
-
-      }
-
       &#nascar::after {
-        background-image: url('../../../dist/assets/images/design-2.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_REDESIGN_HEROIMAGE_FLAT.png');
       }
 
       &#sprint::after {
-        background-image: url('../../../dist/assets/images/vote-2.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_SPRINTFANVOTE_HEROIMAGE_FLAT.png');
       }
 
       &#drive::after {
-        background-image: url('../../../dist/assets/images/video-3.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_DRIVE_HEROIMAGE_FLAT.png');
       }
 
       &#ndms::after {
-        background-image: url('../../../dist/assets/images/editor-3.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_NDMSCMS_HEROIMAGE_FLAT.png');
       }
 
       &#rcr::after {
-        background-image: url('../../../dist/assets/images/e-commerce-1.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_RCRSTORE_HEROIMAGE_FLAT.png');
       }
 
       &#noda::after {
-        background-image: url('../../../dist/assets/images/brand-2.jpg');
+        background-image: url('../../../dist/assets/images/NASCAR_NODASCHOOL_HEROIMAGE_FLAT.png');
       }
 
     }
@@ -296,16 +277,73 @@ main {
 
 }
 
+@media only screen and (max-width: 1024px) and (max-height: 768px) {
+  main {
+    .section {
+      &.challenge {
+        height: 60vh;
+      }
+      &.solutions {
+        margin-top: 600px;
+      }
+    }
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
-  main .section.solutions {
-    margin-top: 515px;
-    padding-top: 50px;
-  }
 
-  main .section.execution {
-    margin-bottom: 0;
-    padding-top: 50px;
+  main {
+    .section {
+      h1 {
+        line-height: 1em;
+      }
+      &.challenge {
+        height: 55vh;
+
+        .desktop,
+        .tablet {
+          display: none;
+        }
+        .mobile {
+          display: block;
+        }
+
+        .content-box {
+          h1 {
+            font-size: 1.3em;
+            line-height: 1.5em;
+          }
+          h3 {
+            font-size: 1em;
+          }
+          p {
+            margin: 1em;
+          }
+          .role {
+            margin: 1em 0;
+            p {
+              font-size: .8em;
+            }
+          }
+        }
+
+        &::after {
+          background-size: contain;
+        }
+      }
+      &.solutions {
+        margin-top: 510px;
+        padding-top: 50px;
+      }
+      &.execution {
+        margin-bottom: 0;
+        padding-top: 50px;
+        &::after {
+          height: 60vh;
+        }
+      }
+    }
   }
 
 }

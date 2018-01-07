@@ -74,10 +74,19 @@ main .section ul.screenshots {
   main .section ul.screenshots {
     margin: 4em 0 0 0;
     li {
+      &::after {
+        margin: 1em 0 0 0;
+      }
+      &.end {
+        margin-bottom: 130px;
+      }
       &.trailer {
         background-color: $blue-dk;
+        display: block;
+        margin-bottom: 180px;
         overflow: hidden;
         padding: 2em 0;
+        position: absolute;
 
         img {
           display: none;
@@ -93,23 +102,41 @@ main .section ul.screenshots {
           margin: 0;
           padding: 0;
 
+          &::before {
+            content: "";
+            background-image: url('../../../dist/assets/images/NASCAR_REDESIGN_HEROIMAGE_FLAT.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.25;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 0;
+          }
+
           dd {
             float: left;
             width: 50%;
             margin: 0;
             padding: 0;
+            position: relative;
             height: 180px;
 
             h3 {
               font-size: 2.5em;
               margin: 1.5em 0 .25em 0;
               padding: 0;
+              z-index: 1;
             }
 
             p {
               color: $blue-pale;
               text-transform: uppercase;
               font-size: .85em;
+              z-index: 1;
             }
 
           }
