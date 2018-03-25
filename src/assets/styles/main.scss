@@ -63,7 +63,7 @@ main {
 
     p {
       font-family: "Montserrat", Arial, sans-serif;
-      font-size: 1.1em;
+      font-size: 1.2em;
       font-weight: 300;
       line-height: 1.5em;
     }
@@ -291,7 +291,7 @@ main {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
   main {
     .section {
@@ -319,11 +319,12 @@ main {
           }
           p {
             margin: 1em;
+            font-size: 1.25em;
           }
           .role {
             margin: 1em 0;
             p {
-              font-size: .8em;
+              font-size: 1em;
             }
           }
         }
@@ -333,7 +334,7 @@ main {
         }
       }
       &.solutions {
-        margin-top: 510px;
+        margin-top: 610px;
         padding-top: 50px;
       }
       &.execution {

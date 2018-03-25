@@ -163,7 +163,7 @@ body {
 
 
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1024px) {
     nav {
       position: fixed;
       .logo {
@@ -175,18 +175,22 @@ body {
         right: .7em;
         top: 0;
         &::before {
-          font-size: 1.5em;
+          font-size: 1.25em;
         }
       }
 
       ul {
         li {
+          font-size: 1.4em;
           padding: 1.5em 0;
         }
       }
 
       &.sticky {
         border: 1px solid $white;
+        .menu {
+          top: 0;
+        }
       }
 
     }

@@ -13,7 +13,7 @@ const start = () => {
   renderFooter(route);
 
   window.onscroll = () => {
-    stickyPanel();
+    //stickyPanel();
     stickyPanel('nav', 'sticky', 100);
   };
 
